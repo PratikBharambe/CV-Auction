@@ -1,0 +1,99 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="W7lbKhOEJHkokMkCxWFm">
+    <mxGraphModel dx="803" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-36" value="" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="10" y="130" width="660" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-1" value="Login page" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=31;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=default;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="325" y="20" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-3" target="ADVqdpTYL5TJXoad9Aht-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-3" target="ADVqdpTYL5TJXoad9Aht-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-3" value="Enter Username" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="26.5" y="170" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-4" target="ADVqdpTYL5TJXoad9Aht-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-4" target="ADVqdpTYL5TJXoad9Aht-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-4" value="Enter&amp;nbsp;Password" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="26.5" y="240" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-6" target="ADVqdpTYL5TJXoad9Aht-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-6" value="Click on Button" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="26.5" y="310" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-8" value="length &amp;gt; 4 character&lt;div style=&quot;font-size: 14px;&quot;&gt;no spaces &amp;amp; quotes are allowed&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="233.5" y="160" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-10" target="ADVqdpTYL5TJXoad9Aht-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-10" value="length &amp;gt; 8 character&lt;div style=&quot;font-size: 14px;&quot;&gt;no spaces &amp;amp; quotes are allowed&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="233.5" y="230" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-12" value="must contains atleast 1 [Uppercase, specialSymbol, Number]" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="453.5" y="230" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-14" target="ADVqdpTYL5TJXoad9Aht-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-14" value="Get username, Password &amp;amp; role from database" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="26.5" y="370" width="164.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-16" target="ADVqdpTYL5TJXoad9Aht-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-16" target="ADVqdpTYL5TJXoad9Aht-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-16" value="check user&amp;nbsp;&lt;div style=&quot;font-size: 14px;&quot;&gt;credentilas&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="31.379999999999995" y="460" width="154.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-18" value="Go to login page and&lt;div style=&quot;font-size: 14px;&quot;&gt;shoe invalid credentials message&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="253.5" y="470" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-22" target="ADVqdpTYL5TJXoad9Aht-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="266.38" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" edge="1" parent="1" source="ADVqdpTYL5TJXoad9Aht-22" target="ADVqdpTYL5TJXoad9Aht-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-22" value="check role" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="31.629999999999995" y="570" width="154.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-24" value="user not found" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="186.13" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-25" value="user found" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="113.5" y="540" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-28" value="display admin dashboard" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="41.379999999999995" y="670" width="134.74" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-30" value="display client page" style="whiteSpace=wrap;html=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;rounded=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="203.5" y="670" width="134.74" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-33" value="Client login" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="191" y="570" width="72.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ADVqdpTYL5TJXoad9Aht-34" value="Admin login" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="630" width="72.5" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
