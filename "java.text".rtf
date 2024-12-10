@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-BoldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red204\green108\blue29;\red217\green232\blue247;\red230\green230\blue250;
+\red18\green144\blue195;\red249\green250\blue244;\red30\green181\blue64;\red121\green171\blue255;\red242\green242\blue0;
+\red167\green236\blue33;\red150\green236\blue63;\red141\green218\blue248;\red243\green236\blue121;\red23\green198\blue163;
+\red104\green151\blue187;}
+{\*\expandedcolortbl;;\csgenericrgb\c80000\c42353\c11373;\csgenericrgb\c85098\c90980\c96863;\csgenericrgb\c90196\c90196\c98039;
+\csgenericrgb\c7059\c56471\c76471;\csgenericrgb\c97647\c98039\c95686;\csgenericrgb\c11765\c70980\c25098;\csgenericrgb\c47451\c67059\c100000;\csgenericrgb\c94902\c94902\c0;
+\csgenericrgb\c65490\c92549\c12941;\csgenericrgb\c58824\c92549\c24706;\csgenericrgb\c55294\c85490\c97255;\csgenericrgb\c95294\c92549\c47451;\csgenericrgb\c9020\c77647\c63922;
+\csgenericrgb\c40784\c59216\c73333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16380\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf2 package\cf3  com\cf4 .\cf3 demo\cf4 .\cf3 test\cf4 ;\cf0 \
+\
+\cf2 import\cf3  com\cf4 .\cf3 demo\cf4 .\cf3 beans\cf4 .\cf3 Exam\cf4 ;\cf0 \
+\cf2 import\cf3  com\cf4 .\cf3 demo\cf4 .\cf3 beans\cf4 .\cf3 Question\cf4 ;\cf0 \
+\cf2 import\cf3  com\cf4 .\cf3 demo\cf4 .\cf3 service\cf4 .\cf3 ExamService\cf4 ;\cf0 \
+\
+\cf2 import\cf3  \ul java\cf4 \ulc4 .\cf3 \ulc3 text\cf4 \ulc4 .\cf3 \ulc3 SimpleDateFormat\cf4 \ulnone ;\cf0 \
+\cf2 import\cf3  java\cf4 .\cf3 util\cf4 .\cf3 Date\cf4 ;\cf0 \
+\cf2 import\cf3  java\cf4 .\cf3 util\cf4 .\cf3 Scanner\cf4 ;\cf0 \
+\
+\cf2 public\cf3  \cf2 class\cf3  \cf5 Main\cf3  \cf6 \{\cf0 \
+\cf3     \cf2 public\cf3  \cf2 static\cf3  \cf2 void\cf3  \cf7 main\cf6 (\cf5 String\cf6 []\cf3  \cf8 args\cf6 )\cf3  \cf6 \{\cf0 \
+\cf3         \cf5 ExamService\cf3  \cf9 examService\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 ExamService\cf6 ()\cf4 ;\cf0 \
+\cf3         \cf5 Exam\cf3  \cf9 javaExam\cf3  \cf4 =\cf3  
+\f1\i \cf11 createJavaExam
+\f0\i0 \cf6 ()\cf4 ;\cf0 \
+\cf3         \cf5 Exam\cf3  \cf9 htmlExam\cf3  \cf4 =\cf3  
+\f1\i \cf11 createHtmlExam
+\f0\i0 \cf6 ()\cf4 ;\cf0 \
+\
+\cf3         \cf5 Scanner\cf3  \cf9 \ul \ulc9 scanner\cf3 \ulnone  \cf4 =\cf3  \cf2 new\cf3  \cf10 Scanner\cf6 (\cf5 System\cf4 .
+\f2\i\b \cf12 in
+\f0\i0\b0 \cf6 )\cf4 ;\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf3         \cf2 boolean\cf3  \cf9 continueTesting\cf3  \cf4 =\cf3  \cf2 true\cf4 ;\cf0 \
+\
+\cf3         \cf2 while\cf3  \cf6 (\cf13 continueTesting\cf6 )\cf3  \cf6 \{\cf0 \
+\cf3             \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 println\cf6 (\cf14 "\\nWhich exam would you like to take?"\cf6 )\cf4 ;\cf0 \
+\cf3             \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 println\cf6 (\cf14 "1. Java"\cf6 )\cf4 ;\cf0 \
+\cf3             \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 println\cf6 (\cf14 "2. HTML"\cf6 )\cf4 ;\cf0 \
+\cf3             \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 print\cf6 (\cf14 "Enter your choice: "\cf6 )\cf4 ;\cf0 \
+\cf3             \cf2 int\cf3  \cf9 choice\cf3  \cf4 =\cf3  \cf13 scanner\cf4 .\cf10 nextInt\cf6 ()\cf4 ;\cf0 \
+\
+\cf3             \cf2 switch\cf3  \cf6 (\cf13 choice\cf6 )\cf3  \cf6 \{\cf0 \
+\cf3                 \cf2 case\cf3  \cf15 1\cf4 :\cf0 \
+\cf3                     \cf13 examService\cf4 .\cf10 conductExam\cf6 (\cf13 javaExam\cf6 )\cf4 ;\cf0 \
+\cf3                     \cf2 break\cf4 ;\cf0 \
+\cf3                 \cf2 case\cf3  \cf15 2\cf4 :\cf0 \
+\cf3                     \cf13 examService\cf4 .\cf10 conductExam\cf6 (\cf13 htmlExam\cf6 )\cf4 ;\cf0 \
+\cf3                     \cf2 break\cf4 ;\cf0 \
+\cf3                 \cf2 default\cf4 :\cf0 \
+\cf3                     \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 println\cf6 (\cf14 "Invalid choice. Please try again."\cf6 )\cf4 ;\cf0 \
+\cf3                     \cf2 continue\cf4 ;\cf0 \
+\cf3             \cf6 \}\cf0 \
+\
+\cf3             \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 print\cf6 (\cf14 "Do you want to continue? (yes/no): "\cf6 )\cf4 ;\cf0 \
+\cf3             \cf5 String\cf3  \cf9 response\cf3  \cf4 =\cf3  \cf13 scanner\cf4 .\cf10 next\cf6 ()\cf4 ;\cf0 \
+\cf3             \cf13 continueTesting\cf3  \cf4 =\cf3  \cf13 response\cf4 .\cf10 equalsIgnoreCase\cf6 (\cf14 "yes"\cf6 )\cf4 ;\cf0 \
+\cf3         \cf6 \}\cf0 \
+\
+\cf3         \cf5 System\cf4 .
+\f2\i\b \cf12 out
+\f0\i0\b0 \cf4 .\cf10 println\cf6 (\cf14 "Thank you for participating in the exams!"\cf6 )\cf4 ;\cf0 \
+\cf3     \cf6 \}\cf0 \
+\
+\cf3     \cf2 private\cf3  \cf2 static\cf3  \cf5 Exam\cf3  \cf7 createJavaExam\cf6 ()\cf3  \cf6 \{\cf0 \
+\cf3         \cf5 Question\cf6 []\cf3  \cf9 questions\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf5 Question\cf6 [\cf15 5\cf6 ]\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 0\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 1\cf4 ,\cf3  \cf14 "What is the default value of a boolean variable?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "true"\cf4 ,\cf3  \cf14 "false"\cf4 ,\cf3  \cf14 "null"\cf4 ,\cf3  \cf14 "undefined"\cf6 \}\cf4 ,\cf3  \cf14 "false"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 1\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 2\cf4 ,\cf3  \cf14 "Which of the following is not a Java feature?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "Object-Oriented"\cf4 ,\cf3  \cf14 "Platform-Independent"\cf4 ,\cf3  \cf14 "Use of pointers"\cf4 ,\cf3  \cf14 "Multithreaded"\cf6 \}\cf4 ,\cf3  \cf14 "Use of pointers"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 2\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 3\cf4 ,\cf3  \cf14 "Which keyword is used to prevent inheritance in Java?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "final"\cf4 ,\cf3  \cf14 "static"\cf4 ,\cf3  \cf14 "private"\cf4 ,\cf3  \cf14 "protected"\cf6 \}\cf4 ,\cf3  \cf14 "final"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 3\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 4\cf4 ,\cf3  \cf14 "What is the size of an int variable in Java?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "16 bits"\cf4 ,\cf3  \cf14 "32 bits"\cf4 ,\cf3  \cf14 "64 bits"\cf4 ,\cf3  \cf14 "8 bits"\cf6 \}\cf4 ,\cf3  \cf14 "32 bits"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 4\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 5\cf4 ,\cf3  \cf14 "Which method is the entry point of a Java program?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "main()"\cf4 ,\cf3  \cf14 "start()"\cf4 ,\cf3  \cf14 "run()"\cf4 ,\cf3  \cf14 "init()"\cf6 \}\cf4 ,\cf3  \cf14 "main()"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\
+\cf3         \cf2 return\cf3  \cf2 new\cf3  \cf10 Exam\cf6 (\cf15 1\cf4 ,\cf3  \cf14 "Java Test"\cf4 ,\cf3  \cf14 "Java Basics"\cf4 ,\cf3  \cf2 new\cf3  \cf10 Date\cf6 ()\cf4 ,\cf3  \cf13 questions\cf6 )\cf4 ;\cf0 \
+\cf3     \cf6 \}\cf0 \
+\
+\cf3     \cf2 private\cf3  \cf2 static\cf3  \cf5 Exam\cf3  \cf7 createHtmlExam\cf6 ()\cf3  \cf6 \{\cf0 \
+\cf3         \cf5 Question\cf6 []\cf3  \cf9 questions\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf5 Question\cf6 [\cf15 5\cf6 ]\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 0\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 1\cf4 ,\cf3  \cf14 "What does HTML stand for?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "Hypertext Markup Language"\cf4 ,\cf3  \cf14 "Hightext Machine Language"\cf4 ,\cf3  \cf14 "Hypertext Markup Level"\cf4 ,\cf3  \cf14 "None of the above"\cf6 \}\cf4 ,\cf3  \cf14 "Hypertext Markup Language"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 1\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 2\cf4 ,\cf3  \cf14 "Which HTML tag is used to define an internal style sheet?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "<css>"\cf4 ,\cf3  \cf14 "<style>"\cf4 ,\cf3  \cf14 "<script>"\cf4 ,\cf3  \cf14 "<stylesheet>"\cf6 \}\cf4 ,\cf3  \cf14 "<style>"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 2\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 3\cf4 ,\cf3  \cf14 "Which is the correct HTML for referring to an external style sheet?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "<style src='mystyle.css'>"\cf4 ,\cf3  \cf14 "<stylesheet>mystyle.css</stylesheet>"\cf4 ,\cf3  \cf14 "<link rel='stylesheet' type='text/css' href='mystyle.css'>"\cf4 ,\cf3  \cf14 "<style>mystyle.css</style>"\cf6 \}\cf4 ,\cf3  \cf14 "<link rel='stylesheet' type='text/css' href='mystyle.css'>"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 3\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 4\cf4 ,\cf3  \cf14 "What is the correct HTML element for inserting a line break?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "<break>"\cf4 ,\cf3  \cf14 "<lb>"\cf4 ,\cf3  \cf14 "<br>"\cf4 ,\cf3  \cf14 "<newline>"\cf6 \}\cf4 ,\cf3  \cf14 "<br>"\cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\cf3         \cf13 questions\cf6 [\cf15 4\cf6 ]\cf3  \cf4 =\cf3  \cf2 new\cf3  \cf10 Question\cf6 (\cf15 5\cf4 ,\cf3  \cf14 "Which character is used to indicate an end tag?"\cf4 ,\cf3  \cf2 new\cf3  \cf5 String\cf6 []\{\cf14 "*"\cf4 ,\cf3  \cf14 "/"\cf4 ,\cf3  \cf14 ">"\cf4 ,\cf3  \cf14 "<"\cf6 \}\cf4 ,\cf3  \cf14 "/"\cf3  \cf4 ,\cf3  \cf15 1\cf6 )\cf4 ;\cf0 \
+\
+\cf3         \cf2 return\cf3  \cf2 new\cf3  \cf10 Exam\cf6 (\cf15 2\cf4 ,\cf3  \cf14 "HTML Test"\cf4 ,\cf3  \cf14 "HTML Basics"\cf4 ,\cf3  \cf2 new\cf3  \cf10 Date\cf6 ()\cf4 ,\cf3  \cf13 questions\cf6 )\cf4 ;\cf0 \
+\cf3     \cf6 \}\cf0 \
+\cf6 \}\cf0 \
+}
