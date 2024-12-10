@@ -19,13 +19,13 @@ function LoginForm() {
             <input type="password" className="form-control" id="password" placeholder="Enter password" required />
           </div>
           <div className="mb-3 text-end">
-            <a href="#" className="text-decoration-none text-primary">Forgot Password?</a>
+            <a href="/forgotpassword" className="text-decoration-none text-primary">Forgot Password?</a>
           </div>
           <button type="submit" className="btn btn-primary w-100">Login</button>
         </form>
         <div className="mt-3 text-center">
           <span>Don't have an account? </span>
-          <a href="#" className="text-decoration-none text-primary">Register for free</a>
+          <a href="/register" className="text-decoration-none text-primary">Register for free</a>
         </div>
       </div>
     </div>
