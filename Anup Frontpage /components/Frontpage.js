@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Frontpage.css"; // Import the external CSS file
 
 function Frontpage() {
   // State to control which content to display
@@ -40,14 +41,7 @@ function Frontpage() {
             </div>
 
             {/* Scroller Container */}
-            <div
-              className="border p-3"
-              style={{
-                height: "300px",
-                overflowY: "scroll",
-                textAlign: "center",
-              }}
-            >
+            <div className="border p-3 scroller-container">
               {activeSection === "live" ? (
                 <div>
                   <h5>Live Auction Content</h5>
