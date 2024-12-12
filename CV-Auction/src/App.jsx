@@ -1,5 +1,5 @@
 import './App.css'
-import ForgotPassword from './pages/loginPage/forgotPassword/ForgotPassword'
+import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Login from './pages/loginPage/Login'
 import Register from './pages/registerPage/Register'
 
