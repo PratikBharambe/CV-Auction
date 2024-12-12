@@ -1,0 +1,74 @@
+-- Create table for Admin
+CREATE TABLE Admin (
+    aid INT AUTO_INCREMENT PRIMARY KEY,
+    aname VARCHAR(100) NOT NULL,
+    apwd VARCHAR(255) NOT NULL,
+    aemail VARCHAR(150) NOT NULL UNIQUE
+);
+
+-- Create table for User
+-- Create a new User table
+CREATE TABLE User (
+    uid INT AUTO_INCREMENT PRIMARY KEY,
+    uname VARCHAR(100) NOT NULL, 
+    upwd VARCHAR(255) NOT NULL,
+    uemail VARCHAR(150) NOT NULL UNIQUE,
+    mob_no VARCHAR(15) NOT NULL, 
+    pan_card CHAR(10) NOT NULL, 
+    address VARCHAR(255),
+    bank_acc_no VARCHAR(20) NOT NULL,
+    access_status ENUM('Active', 'Inactive') DEFAULT 'Active'
+);
+
+
+-- Create table for Auction List
+CREATE TABLE Auction_List (
+    eventid INT AUTO_INCREMENT PRIMARY KEY,
+    eventname VARCHAR(100) NOT NULL,
+    vahicletype VARCHAR(50) NOT NULL,
+    startdate DATE NOT NULL,
+    enddate DATE NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    auctions TEXT,
+    vehicleid INT NOT NULL
+);
+
+-- Create table for Auction
+CREATE TABLE Auction (
+    vehicleid INT NOT NULL,
+    imgid INT,
+    details TEXT,
+    startdate DATE NOT NULL,
+    enddate DATE NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    user_bid_left INT,
+    no_of_bids INT,
+    enterbid DECIMAL(10, 2),
+    PRIMARY KEY (vehicleid)
+);
+
+-- Create table for Auction Payment
+CREATE TABLE Auction_Payment (
+    pid INT AUTO_INCREMENT PRIMARY KEY,
+    auctionid INT NOT NULL,
+    vehicleid INT NOT NULL,
+    uid INT NOT NULL,
+    amt DECIMAL(10, 2) NOT NULL,
+    utr_no VARCHAR(50) NOT NULL
+);
+
+-- Create table for Deposit Payment
+CREATE TABLE Deposit_Payment (
+    uid INT NOT NULL,
+    pid INT NOT NULL,
+    amt DECIMAL(10, 2) NOT NULL,
+    utr_no VARCHAR(50) NOT NULL,
+    PRIMARY KEY (uid, pid)
+);
+
+-- Create table for Total Vehicles
+CREATE TABLE Total_Vehicles (
+    vehicleid INT AUTO_INCREMENT PRIMARY KEY,
+    imgid INT,
+    vehicledetails TEXT NOT NULL
+);
