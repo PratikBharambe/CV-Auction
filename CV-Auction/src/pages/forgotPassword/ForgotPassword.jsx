@@ -5,7 +5,9 @@ import Form from './components/form'
 function ForgotPassword() {
   return (
     <div onLoad={document.title = "Forgot Password"}>
+       <div>
         <Form/>
+       </div>
     </div>
   )
 }
