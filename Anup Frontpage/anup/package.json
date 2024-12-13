@@ -1,5 +1,5 @@
 {
-  "name": "one",
+  "name": "anup",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "anup": "file:",
     "bootstrap": "^5.3.3",
-    "one": "file:",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.6",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
