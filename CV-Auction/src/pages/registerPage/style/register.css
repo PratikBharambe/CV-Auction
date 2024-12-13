@@ -13,3 +13,11 @@
     animation: fadeInUp 2s ease-out forwards; 
   }
   
+
+  .carbg {
+    background: url("../../assets/images/image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }

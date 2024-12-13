@@ -40,7 +40,7 @@ function RegistrationForm() {
     }
 
   return (
-    <div className="container m-5">
+    <div className="container bg-transparent p-5">
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
           <div className="card shadow-lg p-4 border-primary rounded-3">
@@ -85,6 +85,21 @@ function RegistrationForm() {
                         <hr className="border-primary" />
                       </td>
                     </tr>
+
+                    <tr>
+                      <td>
+                        <div className="form-group mb-3">
+                          <label htmlFor="pancard" className="form-label">Enter PAN Card no.</label>
+                          <input type="text" className="form-control" name="pancard" id="pancard" placeholder="ABCTY1234D" required />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colSpan={2}>
+                        <hr className="border-primary" />
+                      </td>
+                    </tr>
+
                     <tr>
                       <td>
                         <div className="form-group mb-3">
