@@ -13,3 +13,31 @@
     height: 100%;
     object-fit: cover;
 }
+
+.background {
+    background-color: #f8f9fa; 
+  }
+  
+  #img-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .object-cover {
+    object-fit: cover; 
+    object-position: center; 
+  }
+  
+  @media (max-width: 768px) {
+    #img-container {
+      display: none;
+    }
+
+    .card{
+        width: 300px;
+    }
+  }
+  
+
+  
