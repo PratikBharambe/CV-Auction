@@ -1,0 +1,69 @@
+/* Header styles */
+.header-container h4 {
+    font-weight: bold;
+  }
+  
+  .header-container .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-container .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Search section styles */
+  .search-container h2 {
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  /* Vehicle cards styles */
+  .vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .vehicle-card .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .vehicle-card .card-title span {
+    color: #6c757d;
+  }
+  
+  .vehicle-card .btn {
+    font-size: 12px;
+  }
+  
+  .vehicle-card .form-check-label a {
+    color: #007bff;
+  }
+  
+  .vehicle-card .btn-warning {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vehicle-card {
+      margin-bottom: 20px;
+    }
+  }

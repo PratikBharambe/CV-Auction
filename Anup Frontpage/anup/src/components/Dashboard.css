@@ -1,0 +1,45 @@
+/* General styles */
+.dashboard-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header .logo h4 {
+    font-weight: bold;
+  }
+  
+  header .user-details p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Navbar styles */
+  nav button {
+    font-size: 14px;
+  }
+  
+  /* Metrics styles */
+  .metric-label {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Quick links styles */
+  .quick-links h6 {
+    font-weight: bold;
+  }
+  
+  .quick-links ul li a {
+    color: #007bff;
+  }
+  
+  /* Placeholder styles for charts */
+  .chart-placeholder {
+    height: 200px;
+  }
