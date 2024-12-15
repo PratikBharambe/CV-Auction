@@ -10,11 +10,12 @@ CREATE TABLE Admin (
 -- Create a new User table
 CREATE TABLE User (
     uid INT AUTO_INCREMENT PRIMARY KEY,
-    uname VARCHAR(100) NOT NULL, 
+    uname VARCHAR(100) NOT NULL,
+    user_role ENUM('Admin', 'Customer', 'Seller') NOT NULL,
     upwd VARCHAR(255) NOT NULL,
     uemail VARCHAR(150) NOT NULL UNIQUE,
-    mob_no VARCHAR(15) NOT NULL, 
-    pan_card CHAR(10) NOT NULL, 
+    mob_no VARCHAR(15) NOT NULL,
+    pan_card CHAR(10) NOT NULL,
     address VARCHAR(255),
     bank_acc_no VARCHAR(20) NOT NULL,
     access_status ENUM('Active', 'Inactive') DEFAULT 'Active'
@@ -72,3 +73,20 @@ CREATE TABLE Total_Vehicles (
     imgid INT,
     vehicledetails TEXT NOT NULL
 );
+
+CREATE TABLE car_details (
+    car_id INT AUTO_INCREMENT PRIMARY KEY, 
+    car_no VARCHAR(20) NOT NULL,          
+    registration_year YEAR NOT NULL, 
+    model VARCHAR(50) NOT NULL,           -- Brand name or model of the car
+    fuel VARCHAR(30),                     -- Fuel type with mileage information
+    insurance VARCHAR(50),             
+    km_driven INT,                        
+    RTO_passing VARCHAR(50),         
+    ownership VARCHAR(20),               
+    engine_displacement INT,           
+    year_of_manufracture YEAR NOT NULL,   
+    price DECIMAL(10, 2) NOT NULL,       
+    owner_id INT                        
+);
+
