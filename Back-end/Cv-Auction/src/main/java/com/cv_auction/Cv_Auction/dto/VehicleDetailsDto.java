@@ -1,17 +1,13 @@
-package com.cv_auction.Cv_Auction.beans;
+package com.cv_auction.Cv_Auction.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VehicalDetails {
-    @Id
+public class VehicleDetailsDto {
     private int detailsId;
     private String vehicleNo;
     private String carBrand;
