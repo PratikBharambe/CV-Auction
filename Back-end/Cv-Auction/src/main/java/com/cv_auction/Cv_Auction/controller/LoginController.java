@@ -23,5 +23,4 @@ public class LoginController {
             System.out.println("Login failed");
         }
     }
-
 }
