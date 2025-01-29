@@ -89,19 +89,25 @@
         }
       }
     },
-    "/api/Users/{id}": {
-      "get": {
+    "/api/Users/{Uemail}": {
+      "post": {
         "tags": [
           "Users"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Uemail",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
+            }
+          },
+          {
+            "name": "Upwd",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -127,7 +133,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Users/{id}": {
       "put": {
         "tags": [
           "Users"

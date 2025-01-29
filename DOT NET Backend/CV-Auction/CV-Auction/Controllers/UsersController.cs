@@ -31,23 +31,33 @@ namespace CV_Auction.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        // GET: api/Users/String?Upwd
+        [HttpPost("{Uemail}")]
+        // This HTTP GET method retrieves a user based on the provided Uemail
+        public async Task<ActionResult<User>> LoginUser(string Uemail, [FromQuery]string Upwd)
         {
-          if (_context.Users == null)
-          {
-              return NotFound();
-          }
-            var user = await _context.Users.FindAsync(id);
-
-            if (user == null)
+            // Check if the Users DbSet is null, which means the context is not properly initialized
+            if (_context.Users == null)
             {
+                // Return a NotFound response if the Users DbSet is null
                 return NotFound();
             }
 
-            return user;
+            // Use FirstOrDefaultAsync to find the user with the specified Uemail in the database
+            // FirstOrDefaultAsync returns the first matching record or null if no match is found
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Uemail == Uemail);
+
+            // If the user is not found, return a NotFound response
+            if (user != null)
+            {
+                if (Upwd.Equals(user.Upwd))
+                    return Ok(user);
+            }
+
+            // Return the user object if found, wrapped in an Ok response (indicating success)
+            return NotFound();
         }
+
 
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -81,19 +91,28 @@ namespace CV_Auction.Controllers
         }
 
         // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // This endpoint registers a new user by adding them to the database.
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<User>> RegisterUser(User user)
         {
-          if (_context.Users == null)
-          {
-              return Problem("Entity set 'cvauctionContext.Users'  is null.");
-          }
+            // Check if the Users DbSet is null, meaning the context is not properly initialized
+            if (_context.Users == null)
+            {
+                // Return a Problem response with an error message if Users DbSet is null
+                return Problem("Entity set 'cvauctionContext.Users' is null.");
+            }
+
+            // Add the new user to the Users DbSet
             _context.Users.Add(user);
+
+            // Asynchronously save the changes (this commits the user to the database)
             await _context.SaveChangesAsync();
 
+            // Return a CreatedAtAction response with the newly created user,
+            // along with the URL to retrieve the user by their UID (User ID)
             return CreatedAtAction("GetUser", new { id = user.Uid }, user);
         }
+
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]

@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "CV-Auction\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\UsersController.cs",
               "RelativeToolTip": "CV-Auction\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAADwv1oAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T03:58:36.393Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "CV-Auction\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-29T03:50:37.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T03:50:37.728Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "CV-Auction\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-29T03:48:31.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T03:48:31.613Z"
             },
             {
               "$type": "Document",
@@ -91,7 +89,7 @@
               "RelativeDocumentMoniker": "CV-Auction\\Models\\User.cs",
               "ToolTip": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Models\\User.cs",
               "RelativeToolTip": "CV-Auction\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T03:46:59.315Z",
               "EditorCaption": ""
@@ -106,8 +104,7 @@
               "RelativeToolTip": "CV-Auction\\Models\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T03:46:42.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T03:46:42.44Z"
             },
             {
               "$type": "Document",
@@ -119,8 +116,7 @@
               "RelativeToolTip": "CV-Auction\\Models\\cvauctionContext.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAUwBwAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T03:46:23.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T03:46:23.222Z"
             },
             {
               "$type": "Document",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "CV-Auction\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T03:42:48.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T03:42:48.711Z"
             }
           ]
         }

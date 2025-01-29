@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from "/logo.png";
-import Registerservice from './services/Registerservice';
+import LoginAndRegisterService from '../../services/LoginAndRegisterService';
 
 function RegistrationForm() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -83,7 +83,9 @@ function RegistrationForm() {
       AccessStatus: "Inactive",
     };
 
-    Registerservice.registerUser(userData)
+    console.log(JSON.stringify(userData));
+
+    LoginAndRegisterService.registerUser(userData)
       .then((response) => {
         console.log(response);
       }).catch((error) => {
