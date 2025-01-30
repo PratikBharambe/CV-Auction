@@ -6,9 +6,13 @@ function Form() {
   const [showOTP, setShowOTP] = useState(false);
   const [showSetNewPassword, setShowSetNewPassword] = useState(false);
 
+  const [Uemail, SetUemail] = useState("");
+
   function checkData(event) {
     event.preventDefault();
     alert("OTP sent successfully");
+    const userData = {Uemail}
+    console.log("OTP sent to email:", userData);
     setShowOTP(true);
   }
 
@@ -27,7 +31,8 @@ function Form() {
               <form className="needs-validation" noValidate>
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">Email</label>
-                  <input type="email" className="form-control" id="email" name="email" placeholder="example@gmail.com" required />
+                  <input type="email" className="form-control" id="email" name="email" placeholder="example@gmail.com" required
+                  value={Uemail} onChange={(e) => SetUemail(e.target.value)} />
                   <div className="invalid-feedback">Please provide a valid email.</div>
                 </div>
                 <button type="submit" className="btn btn-primary w-100" onClick={checkData}>Send Verification Code</button>

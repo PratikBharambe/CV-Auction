@@ -83,7 +83,7 @@ function RegistrationForm() {
       AccessStatus: "Inactive",
     };
 
-    console.log(JSON.stringify(userData));
+    console.log(userData);
 
     LoginAndRegisterService.registerUser(userData)
       .then((response) => {

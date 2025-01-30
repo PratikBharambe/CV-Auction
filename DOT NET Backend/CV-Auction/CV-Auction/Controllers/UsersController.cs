@@ -28,6 +28,7 @@ namespace CV_Auction.Controllers
           {
               return NotFound();
           }
+          
             return await _context.Users.ToListAsync();
         }
 
@@ -102,15 +103,17 @@ namespace CV_Auction.Controllers
                 return Problem("Entity set 'cvauctionContext.Users' is null.");
             }
 
-            // Add the new user to the Users DbSet
-            _context.Users.Add(user);
+            try
+            {
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
 
-            // Asynchronously save the changes (this commits the user to the database)
-            await _context.SaveChangesAsync();
-
-            // Return a CreatedAtAction response with the newly created user,
-            // along with the URL to retrieve the user by their UID (User ID)
-            return CreatedAtAction("GetUser", new { id = user.Uid }, user);
         }
 
 

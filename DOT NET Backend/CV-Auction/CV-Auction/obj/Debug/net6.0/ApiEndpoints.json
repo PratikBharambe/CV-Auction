@@ -84,7 +84,7 @@
   },
   {
     "ContainingType": "CV_Auction.Controllers.UsersController",
-    "Method": "GetUser",
+    "Method": "LoginUser",
     "RelativePath": "api/Users/{Uemail}",
     "HttpMethod": "POST",
     "IsController": true,
