@@ -84,6 +84,22 @@
   },
   {
     "ContainingType": "CV_Auction.Controllers.UsersController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Users/{Uemail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Uemail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CV_Auction.Controllers.UsersController",
     "Method": "LoginUser",
     "RelativePath": "api/Users/{Uemail}",
     "HttpMethod": "POST",

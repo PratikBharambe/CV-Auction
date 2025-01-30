@@ -6,7 +6,8 @@ namespace CV_Auction.Service
     public class EmailServiceImpl : EmailService
     {
 
-        public static void SendEmail(string toEmail, string subject, string body)
+
+        public void SendEmail(string toEmail, string subject, string body)
         {
             try
             {
@@ -15,8 +16,8 @@ namespace CV_Auction.Service
                 int smtpPort = 587;  // Use 465 for SSL
 
                 // Your Gmail credentials
-                string fromEmail = "bharambepratik2002@gmail.com";  // Replace with your Gmail email
-                string password = "yhexjdsegqiforwq";  // Use App Password if 2FA is enabled
+                string fromEmail = "cvauction02@gmail.com";  // Replace with your Gmail email
+                string password = "meaimvlunnvvlfze";  // Use App Password if 2FA is enabled
 
                 // Create a new MailMessage object
                 MailMessage mail = new MailMessage();

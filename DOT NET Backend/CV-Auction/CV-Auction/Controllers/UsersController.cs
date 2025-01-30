@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CV_Auction.Models;
+using CV_Auction.Service;
 
 namespace CV_Auction.Controllers
 {
@@ -31,6 +32,41 @@ namespace CV_Auction.Controllers
           
             return await _context.Users.ToListAsync();
         }
+
+        [HttpGet("{Uemail}")]
+        public async Task<IActionResult> ForgotPassword(string Uemail)
+        {
+            if (_context.Users == null)
+            {
+                return NotFound();
+            } // Missing closing brace here
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Uemail == Uemail);
+            if (user != null)
+            {
+                Random random = new Random();
+                int otp = random.Next(100000, 1000000);
+
+                // Send OTP to the user's email
+                EmailService emailService = new EmailServiceImpl();
+                emailService.SendEmail(user.Uemail, "Password Recovery", "Your OTP is: " + otp);
+
+                // Return a JSON result containing the Uemail and OTP
+                var result = new
+                {
+                    Uemail = user.Uemail,
+                    OTP = otp
+                };
+
+                // Use JsonResult to return the result as JSON
+                return new JsonResult(result);
+            }
+
+            return NotFound(); // In case user doesn't exist
+        }
+
+
+
 
         // GET: api/Users/String?Upwd
         [HttpPost("{Uemail}")]

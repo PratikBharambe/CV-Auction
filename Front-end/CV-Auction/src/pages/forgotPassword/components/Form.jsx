@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import OTP from "./OTP";
 import SetNewPassword from "./SetNewPassword";
+import LoginAndRegisterService from "../../../services/LoginAndRegisterService";
 
 function Form() {
   const [showOTP, setShowOTP] = useState(false);
@@ -8,12 +9,22 @@ function Form() {
 
   const [Uemail, SetUemail] = useState("");
 
+  const [otp, setOtp] = useState("");
+
   function checkData(event) {
     event.preventDefault();
-    alert("OTP sent successfully");
     const userData = {Uemail}
     console.log("OTP sent to email:", userData);
-    setShowOTP(true);
+    LoginAndRegisterService.forgotPassword(userData)
+    .then((response) => {
+      console.log(response.data);
+      setOtp(response.data.otp);
+      alert("OTP sent successfully");
+      setShowOTP(true);
+
+    }).catch((error) => {
+      console.log("Emaail not found");
+    });
   }
 
   function handleOTPValidation() {
@@ -37,7 +48,7 @@ function Form() {
                 </div>
                 <button type="submit" className="btn btn-primary w-100" onClick={checkData}>Send Verification Code</button>
               </form>
-              {showOTP && <OTP onValidate={handleOTPValidation} />}
+              {showOTP && <OTP OTP={otp} onValidate={handleOTPValidation} />}
             </div>
           </div>
         ) : (
