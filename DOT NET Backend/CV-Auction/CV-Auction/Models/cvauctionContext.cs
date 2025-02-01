@@ -127,11 +127,11 @@ namespace CV_Auction.Models
                 //    .OnDelete(DeleteBehavior.Cascade)
                 //    .HasConstraintName("FK__Auction_Lis__aid__35BCFE0A");
 
-                entity.HasOne(d => d.Vehicle)
-                    .WithMany(p => p.AuctionLists)
-                    .HasForeignKey(d => d.Vehicleid)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("FK__Auction_L__vehic__36B12243");
+                //entity.HasOne(d => d.Vehicle)
+                //    .WithMany(p => p.AuctionLists)
+                //    .HasForeignKey(d => d.Vehicleid)
+                //    .OnDelete(DeleteBehavior.Cascade)
+                //    .HasConstraintName("FK__Auction_L__vehic__36B12243");
             });
 
             modelBuilder.Entity<AuctionStatusTrack>(entity =>
@@ -203,10 +203,10 @@ namespace CV_Auction.Models
                 //    .HasForeignKey(d => d.Aid)
                 //    .HasConstraintName("FK__Current_Auc__aid__3C69FB99");
 
-                entity.HasOne(d => d.Event)
-                    .WithMany(p => p.CurrentAuctions)
-                    .HasForeignKey(d => d.Eventid)
-                    .HasConstraintName("FK__Current_A__event__3B75D760");
+                //entity.HasOne(d => d.Event)
+                //    .WithMany(p => p.CurrentAuctions)
+                //    .HasForeignKey(d => d.Eventid)
+                //    .HasConstraintName("FK__Current_A__event__3B75D760");
             });
 
             modelBuilder.Entity<DepositPayment>(entity =>
@@ -298,11 +298,11 @@ namespace CV_Auction.Models
 
                 entity.Property(e => e.Imgid).HasColumnName("imgid");
 
-                entity.HasOne(d => d.Details)
-                    .WithMany(p => p.TotalVehicles)
-                    .HasForeignKey(d => d.DetailsId)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("FK__Total_Veh__detai__32E0915F");
+                //entity.HasOne(d => d.Details)
+                //    .WithMany(p => p.TotalVehicles)
+                //    .HasForeignKey(d => d.DetailsId)
+                //    .OnDelete(DeleteBehavior.Cascade)
+                //    .HasConstraintName("FK__Total_Veh__detai__32E0915F");
 
                 entity.HasOne(d => d.Img)
                     .WithMany(p => p.TotalVehicles)

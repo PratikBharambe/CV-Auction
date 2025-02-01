@@ -12,6 +12,7 @@ import Auction from "./pages/tejasPages/component/Auction"
 import Logout from "./pages/tejasPages/component/Logout"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AdminManagement from './pages/tejasPages/AdminManagement'
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/allvehicles" element={<Card />} />
           <Route path="/auction" element={<Auction />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/admin" element={<AdminManagement />} />
         </Routes>
       </BrowserRouter>
 

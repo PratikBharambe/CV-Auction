@@ -12,7 +12,7 @@ namespace CV_Auction.Models
         public bool? AuctionStart { get; set; }
         public bool? AuctionEnd { get; set; }
 
-        public virtual Admin? AidNavigation { get; set; }
-        public virtual AuctionList? Event { get; set; }
+        //public virtual Admin? AidNavigation { get; set; }
+        //public virtual AuctionList? Event { get; set; }
     }
 }

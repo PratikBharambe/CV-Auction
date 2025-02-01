@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import MainNav from './MainNav'; // Import the MainNav component
-import './AddVehicle.css'; // Add custom styles for AddVehicle
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const AddVehicle = () => {
     const [formData, setFormData] = useState({
-        carNumber: '',
+        vehicleno: '',
+        carBrand: '',
+        state: '',
         registrationYear: '',
-        brandName: '',
-        modelName: '',
-        fuelType: 'petrol',
+        model: '',
+        fuel: '',
         insurance: '',
         kmDriven: '',
         rtoPassing: '',
-        ownership: 'first',
-        manufacturingYear: '',
+        ownership: '',
+        engineDisplacement: '',
+        yearOfManufacture: '',
         price: '',
-        image: null
+        ownerId: ''
     });
 
     const handleChange = (e) => {
@@ -48,13 +49,39 @@ const AddVehicle = () => {
                     <h2 className="text-center mb-4">Enter Vehicle Details</h2>
                     <form onSubmit={handleSubmit} className="row g-4">
                         <div className="col-md-6">
-                            <label htmlFor="car-number" className="form-label">Car Number:</label>
+                            <label htmlFor="vehicleno" className="form-label">Vehicle Number:</label>
                             <input
                                 type="text"
-                                id="car-number"
-                                name="carNumber"
-                                className="form-control"
-                                value={formData.carNumber}
+                                id="vehicleno"
+                                name="vehicleno"
+                                className="form-control border border-2"
+                                value={formData.vehicleno}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="col-md-6">
+                            <label htmlFor="car-brand" className="form-label">Car Brand:</label>
+                            <input
+                                type="text"
+                                id="car-brand"
+                                name="carBrand"
+                                className="form-control border border-2"
+                                value={formData.carBrand}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="col-md-6">
+                            <label htmlFor="state" className="form-label">State:</label>
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                className="form-control border border-2"
+                                value={formData.state}
                                 onChange={handleChange}
                                 required
                             />
@@ -66,7 +93,7 @@ const AddVehicle = () => {
                                 type="number"
                                 id="registration-year"
                                 name="registrationYear"
-                                className="form-control"
+                                className="form-control border border-2"
                                 value={formData.registrationYear}
                                 onChange={handleChange}
                                 required
@@ -74,41 +101,28 @@ const AddVehicle = () => {
                         </div>
 
                         <div className="col-md-6">
-                            <label htmlFor="brand-name" className="form-label">Brand Name:</label>
+                            <label htmlFor="model" className="form-label">Model:</label>
                             <input
                                 type="text"
-                                id="brand-name"
-                                name="brandName"
-                                className="form-control"
-                                value={formData.brandName}
+                                id="model"
+                                name="model"
+                                className="form-control border border-2"
+                                value={formData.model}
                                 onChange={handleChange}
                                 required
                             />
                         </div>
 
                         <div className="col-md-6">
-                            <label htmlFor="model-name" className="form-label">Model Name:</label>
-                            <input
-                                type="text"
-                                id="model-name"
-                                name="modelName"
-                                className="form-control"
-                                value={formData.modelName}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-
-                        <div className="col-md-6">
-                            <label htmlFor="fuel-type" className="form-label">Fuel Type:</label>
+                            <label htmlFor="fuel" className="form-label">Fuel Type:</label>
                             <select
-                                id="fuel-type"
-                                name="fuelType"
-                                className="form-select"
-                                value={formData.fuelType}
+                                id="fuel"
+                                name="fuel"
+                                className="form-select border border-2"
+                                value={formData.fuel}
                                 onChange={handleChange}
-                                required
                             >
+                                <option value="">Select Fuel Type</option>
                                 <option value="petrol">Petrol</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="electric">Electric</option>
@@ -122,10 +136,9 @@ const AddVehicle = () => {
                                 type="text"
                                 id="insurance"
                                 name="insurance"
-                                className="form-control"
+                                className="form-control border border-2"
                                 value={formData.insurance}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
 
@@ -135,10 +148,9 @@ const AddVehicle = () => {
                                 type="number"
                                 id="km-driven"
                                 name="kmDriven"
-                                className="form-control"
+                                className="form-control border border-2"
                                 value={formData.kmDriven}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
 
@@ -148,10 +160,9 @@ const AddVehicle = () => {
                                 type="text"
                                 id="rto-passing"
                                 name="rtoPassing"
-                                className="form-control"
+                                className="form-control border border-2"
                                 value={formData.rtoPassing}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
 
@@ -160,11 +171,11 @@ const AddVehicle = () => {
                             <select
                                 id="ownership"
                                 name="ownership"
-                                className="form-select"
+                                className="form-select border border-2"
                                 value={formData.ownership}
                                 onChange={handleChange}
-                                required
                             >
+                                <option value="">Select Ownership</option>
                                 <option value="first">First</option>
                                 <option value="second">Second</option>
                                 <option value="third">Third</option>
@@ -172,13 +183,25 @@ const AddVehicle = () => {
                         </div>
 
                         <div className="col-md-6">
-                            <label htmlFor="manufacturing-year" className="form-label">Year of Manufacturing:</label>
+                            <label htmlFor="engine-displacement" className="form-label">Engine Displacement:</label>
                             <input
                                 type="number"
-                                id="manufacturing-year"
-                                name="manufacturingYear"
-                                className="form-control"
-                                value={formData.manufacturingYear}
+                                id="engine-displacement"
+                                name="engineDisplacement"
+                                className="form-control border border-2"
+                                value={formData.engineDisplacement}
+                                onChange={handleChange}
+                            />
+                        </div>
+
+                        <div className="col-md-6">
+                            <label htmlFor="year-of-manufacture" className="form-label">Year of Manufacture:</label>
+                            <input
+                                type="number"
+                                id="year-of-manufacture"
+                                name="yearOfManufacture"
+                                className="form-control border border-2"
+                                value={formData.yearOfManufacture}
                                 onChange={handleChange}
                                 required
                             />
@@ -190,10 +213,22 @@ const AddVehicle = () => {
                                 type="number"
                                 id="price"
                                 name="price"
-                                className="form-control"
+                                className="form-control border border-2"
                                 value={formData.price}
                                 onChange={handleChange}
                                 required
+                            />
+                        </div>
+
+                        <div className="col-md-6">
+                            <label htmlFor="owner-id" className="form-label">Owner ID:</label>
+                            <input
+                                type="number"
+                                id="owner-id"
+                                name="ownerId"
+                                className="form-control border border-2"
+                                value={formData.ownerId}
+                                onChange={handleChange}
                             />
                         </div>
 
@@ -204,9 +239,8 @@ const AddVehicle = () => {
                                 id="image"
                                 name="image"
                                 accept="image/*"
-                                className="form-control"
+                                className="form-control border border-2"
                                 onChange={handleFileChange}
-                                required
                             />
                         </div>
 

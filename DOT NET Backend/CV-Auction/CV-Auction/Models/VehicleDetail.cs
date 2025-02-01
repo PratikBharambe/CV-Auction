@@ -5,10 +5,10 @@ namespace CV_Auction.Models
 {
     public partial class VehicleDetail
     {
-        public VehicleDetail()
-        {
-            TotalVehicles = new HashSet<TotalVehicle>();
-        }
+        //public VehicleDetail()
+        //{
+        //    TotalVehicles = new HashSet<TotalVehicle>();
+        //}
 
         public int DetailsId { get; set; }
         public string Vehicleno { get; set; } = null!;
@@ -26,7 +26,7 @@ namespace CV_Auction.Models
         public decimal Price { get; set; }
         public int? OwnerId { get; set; }
 
-        public virtual User? Owner { get; set; }
-        public virtual ICollection<TotalVehicle> TotalVehicles { get; set; }
+        //public virtual User? Owner { get; set; }
+        //public virtual ICollection<TotalVehicle> TotalVehicles { get; set; }
     }
 }
