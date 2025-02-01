@@ -52,7 +52,7 @@ function Form() {
             </div>
           </div>
         ) : (
-          <SetNewPassword />
+          <SetNewPassword mail={Uemail} />
         )}
       </div>
     </>

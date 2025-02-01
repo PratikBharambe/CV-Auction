@@ -45,8 +45,8 @@ const AddVehicle = () => {
 
             <main className="container mt-5">
                 <section className="add-vehicle-form">
-                    <h2 className="text-center">Enter Vehicle Details</h2>
-                    <form onSubmit={handleSubmit} className="row g-3">
+                    <h2 className="text-center mb-4">Enter Vehicle Details</h2>
+                    <form onSubmit={handleSubmit} className="row g-4">
                         <div className="col-md-6">
                             <label htmlFor="car-number" className="form-label">Car Number:</label>
                             <input

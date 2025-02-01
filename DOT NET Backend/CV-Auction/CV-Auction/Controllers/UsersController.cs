@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CV_Auction.Models;
 using CV_Auction.Service;
+using Microsoft.AspNetCore.Identity;
 
 namespace CV_Auction.Controllers
 {
@@ -21,6 +22,8 @@ namespace CV_Auction.Controllers
             _context = context;
         }
 
+
+        // Method to get list of all the avaliable users
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
@@ -32,6 +35,7 @@ namespace CV_Auction.Controllers
           
             return await _context.Users.ToListAsync();
         }
+
 
         [HttpGet("{Uemail}")]
         public async Task<IActionResult> ForgotPassword(string Uemail)
@@ -46,7 +50,7 @@ namespace CV_Auction.Controllers
             {
                 Random random = new Random();
                 int otp = random.Next(100000, 1000000);
-
+ 
                 // Send OTP to the user's email
                 EmailService emailService = new EmailServiceImpl();
                 emailService.SendEmail(user.Uemail, "Password Recovery", "Your OTP is: " + otp);
@@ -66,10 +70,30 @@ namespace CV_Auction.Controllers
         }
 
 
+        [HttpPut("{Uemail}")]
+        public async Task<IActionResult> UpdatePassword(string Uemail, User u)
+        {
+            if (_context.Users == null)
+            {
+                return NotFound();
+            } // Missing closing brace here
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Uemail == Uemail);
+
+            if(user != null)
+            {
+                user.Upwd = u.Upwd;
+                await _context.SaveChangesAsync();
+                return Ok(user);
+            }
+
+            return NotFound();
+        }
 
 
-        // GET: api/Users/String?Upwd
-        [HttpPost("{Uemail}")]
+
+            // GET: api/Users/String?Upwd
+            [HttpPost("{Uemail}")]
         // This HTTP GET method retrieves a user based on the provided Uemail
         public async Task<ActionResult<User>> LoginUser(string Uemail, [FromQuery]string Upwd)
         {
@@ -171,6 +195,11 @@ namespace CV_Auction.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private User? GetUserByEmail(string Uemail)
+        {
+            return _context.Users.FirstOrDefault(u => u.Uemail == Uemail);
         }
 
         private bool UserExists(int id)

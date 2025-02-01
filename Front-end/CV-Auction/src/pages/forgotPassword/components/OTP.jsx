@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 
-function OTP(props, { onValidate }) {
+function OTP(props) {
 
   const [userOtp, setUserOtp] = useState("");
 
   function validateOtp(event) {
     event.preventDefault();
-    onValidate();
+    console.log("Validating OTP:", Number.parseInt(userOtp));
+    if (Number.parseInt(userOtp) !== props.OTP) {
+      alert("Invalid OTP. Please try again.");
+      return;
+    }
+    props.onValidate();
   }
 
   return (

@@ -14,5 +14,9 @@ class LoginAndRegisterService {
   forgotPassword = (data) => {
     return axios.get(path + "/" + data.Uemail);
   };
+
+  updatePassword = (data) => {
+    return axios.put(path + "/" + data.Uemail, data);
+  }
 }
 export default new LoginAndRegisterService();

@@ -1,16 +1,32 @@
 import React, { useState } from "react";
+import LoginAndRegisterService from "../../../services/LoginAndRegisterService";
 
-function SetNewPassword() {
+function SetNewPassword(props) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(password);
+    console.log(confirmPassword);
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match!");
     } else {
       setErrorMessage("");
+      const userDate = {
+        Uemail: props.mail,
+        Upwd: password,
+      };
+
+      LoginAndRegisterService.updatePassword(userDate)
+        .then((response) => {
+          console.log("The new updated passsword is : " + response.data.Upwd);
+        })
+        .catch((error) => {
+          console.log("Error in updating password");
+        });
+
       alert("Password changed successfully!");
     }
   };
