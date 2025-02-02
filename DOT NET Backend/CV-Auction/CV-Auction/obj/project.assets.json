@@ -11174,23 +11174,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ghans\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\a\\.nuget\\packages\\": {},
+    "D:\\Visual Studio\\Vs\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\CV-Auction.csproj",
+      "projectUniqueName": "D:\\Desktop\\CV Auction\\DOT NET Backend\\CV-Auction\\CV-Auction\\CV-Auction.csproj",
       "projectName": "CV-Auction",
-      "projectPath": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\CV-Auction.csproj",
-      "packagesPath": "C:\\Users\\ghans\\.nuget\\packages\\",
-      "outputPath": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\obj\\",
+      "projectPath": "D:\\Desktop\\CV Auction\\DOT NET Backend\\CV-Auction\\CV-Auction\\CV-Auction.csproj",
+      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\CV Auction\\DOT NET Backend\\CV-Auction\\CV-Auction\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Visual Studio\\Vs\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ghans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11199,7 +11199,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11268,6 +11267,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

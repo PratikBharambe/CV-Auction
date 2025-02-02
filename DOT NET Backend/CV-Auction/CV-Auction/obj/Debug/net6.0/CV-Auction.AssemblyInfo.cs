@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CV-Auction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68088439c382070e3f61f5dc9db02770b0e711cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5ef9c8414fec8b4fc0044dc74478cf27106ce74")]
 [assembly: System.Reflection.AssemblyProductAttribute("CV-Auction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CV-Auction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

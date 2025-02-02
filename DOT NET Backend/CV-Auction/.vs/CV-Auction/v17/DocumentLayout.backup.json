@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\service\\emailserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\service\\emailserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\controllers\\currentauctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\controllers\\currentauctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\models\\currentauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\models\\currentauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\controllers\\currentauctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\controllers\\currentauctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\models\\currentauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\models\\currentauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\models\\cvauctioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\models\\cvauctioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,18 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\models\\vehicledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\models\\vehicledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\service\\emailserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\service\\emailserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|solutionrelative:cv-auction\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2512816E-3A6A-4BA1-BF1F-57EC8E460BC0}|CV-Auction\\CV-Auction.csproj|d:\\iet\\final project\\dot net backend\\cv-auction\\cv-auction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,7 +87,7 @@
               "RelativeDocumentMoniker": "CV-Auction\\Controllers\\CurrentAuctionsController.cs",
               "ToolTip": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\CurrentAuctionsController.cs",
               "RelativeToolTip": "CV-Auction\\Controllers\\CurrentAuctionsController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-01T10:00:58.012Z",
               "EditorCaption": ""
@@ -102,11 +102,12 @@
               "RelativeToolTip": "CV-Auction\\Models\\CurrentAuction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T09:59:24.429Z"
+              "WhenOpened": "2025-02-01T09:59:24.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "AuctionList.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Models\\AuctionList.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Models\\AuctionList.cs",
@@ -114,12 +115,11 @@
               "RelativeToolTip": "CV-Auction\\Models\\AuctionList.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T09:53:25.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T09:53:25.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "VehicleDetailsController.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\VehicleDetailsController.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Controllers\\VehicleDetailsController.cs",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "VehicleDetail.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Models\\VehicleDetail.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Models\\VehicleDetail.cs",
@@ -143,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AdminsController.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\AdminsController.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Controllers\\AdminsController.cs",
@@ -151,24 +151,24 @@
               "RelativeToolTip": "CV-Auction\\Controllers\\AdminsController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAYwGMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T03:27:11.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T03:27:11.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "EmailServiceImpl.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Service\\EmailServiceImpl.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Service\\EmailServiceImpl.cs",
               "ToolTip": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Service\\EmailServiceImpl.cs",
               "RelativeToolTip": "CV-Auction\\Service\\EmailServiceImpl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T02:35:48.188Z"
+              "WhenOpened": "2025-01-30T02:35:48.188Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Service\\EmailService.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Service\\EmailService.cs",
@@ -176,7 +176,8 @@
               "RelativeToolTip": "CV-Auction\\Service\\EmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T02:35:16.347Z"
+              "WhenOpened": "2025-01-30T02:35:16.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -189,15 +190,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Controllers\\UsersController.cs",
               "RelativeToolTip": "CV-Auction\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAwwMcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwGgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T03:58:36.393Z"
+              "WhenOpened": "2025-01-29T03:58:36.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -237,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Models\\Admin.cs",
@@ -250,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "cvauctionContext.cs",
               "DocumentMoniker": "D:\\IET\\Final Project\\DOT NET Backend\\CV-Auction\\CV-Auction\\Models\\cvauctionContext.cs",
               "RelativeDocumentMoniker": "CV-Auction\\Models\\cvauctionContext.cs",
