@@ -12,8 +12,8 @@ const MainNav = () => {
                 <ul>
                     <li><Link to="/" className="nav-link">Home</Link></li>
                     <li><Link to="/add-vehicle" className="nav-link">Add Vehicle</Link></li>
-                    <li><Link to="/all-vehicles" className="nav-link">All Vehicles</Link></li>
-                    <li><Link to="/auction" className="nav-link">Auction</Link></li>
+                    <li><Link to="/vehicles-page" className="nav-link">All Vehicles</Link></li>
+                    <li><Link to="/auction" className="nav-link">Auction List</Link></li>
                     <li><Link to="/logout" className="nav-link">Logout</Link></li>
                 </ul>
             </nav>
