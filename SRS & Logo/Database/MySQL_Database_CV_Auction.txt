@@ -67,9 +67,10 @@ CREATE TABLE Current_Auction (
     vehicleid INT PRIMARY KEY,
     eventid INT,
     aid INT,
-    base_price DECIMAL(10, 2) NOT NULL,
+    base_price DECIMAL(10, 2) NOT NULL,	
+    higest bid DECIMAL(10,2) NOT NULL,
     auction_start BOOLEAN DEFAULT 0,
-    auction_end BOOLEAN DEFAULT 0,
+ 
     FOREIGN KEY (eventid) REFERENCES Auction_List(eventid) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (aid) REFERENCES Admin(aid) ON DELETE CASCADE ON UPDATE CASCADE
 );
