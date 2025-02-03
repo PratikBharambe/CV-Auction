@@ -1,33 +1,179 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AdminDashboard from './component/AdminDashboard';
-import AddVehicle from './component/AddVehicle';
-import Card from './component/Card';
-import Auction from './component/Auction';
-import Logout from './component/Logout';
-import Layout from './component/Layout';
-import AboutUs from './component/AboutUs';
-import VehiclesPage from './component/VehiclesPage';
-import AuctionPage from './component/AuctionPage';
+import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import LoginAndRegisterService from "./services/LoginAndRegisterService";
+import { useNavigate } from "react-router-dom";
+import LandingPage from "./services/LandingPage";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<AdminDashboard />} />
-          <Route path="/add-vehicle" element={<AddVehicle />} />
-           <Route path="/vehicles-page" element={<VehiclesPage />} />
-          <Route path="/auction" element={<Auction />} />
-          <Route path="/about-us" element={<AboutUs />} />
-           <Route path="/logout" element={<Logout />} />
-           <Route path="/AuctionPage" element={<AuctionPage />} />
+function Frontpage() {
+  // State to control which content to display
+  const [activeSection, setActiveSection] = useState("live");
 
-        </Routes>
-      </div>
-    </Router>
-    );
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [liveAuction, setLiveAuction] = useState([]);  // Fix for state initialization
+  const [upcomingAuction, setUpcomingAuction] = useState([]);  // Fix for state initialization
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    getLive();
+    getUpcoming();
+  }, []);  // Fix for useEffect: adding empty dependency array to avoid infinite loop
+
+  const getLive = () => {
+    LandingPage.getLiveAuction()
+      .then((response) => {
+        console.log(response.data);
+        setLiveAuction(response.data);
+      })
+      .catch((error) => {
+        console.log("Error in getting live auction data");
+      });
+  };
+
+  const getUpcoming = () => {
+    LandingPage.getUpcomingAuction()
+      .then((response) => {
+        console.log(response.data);
+        setUpcomingAuction(response.data);
+      })
+      .catch((error) => {
+        console.log("Error in getting upcoming auction data");
+      });
   }
-           
 
-export default App;
+  const handleLogin = (event) => {
+    event.preventDefault(); // Prevent form from submitting the traditional way
+
+    // Basic validation
+    if (!email || !password) {
+      setError("Please enter both email and password.");
+      return;
+    }
+
+    setError(""); // Clear error message before attempting to log in
+
+    // Login request
+    const userData = { 
+      Uemail: email, 
+      Upwd: password 
+    };
+
+    LoginAndRegisterService.loginUser(userData)
+      .then((response) => {
+        console.log(response.data);
+        if (response.data.role === "Admin") {
+          navigate('/admin-dashboard');
+        } else {
+          navigate('/dashboard');
+        }
+      })
+      .catch((error) => {
+        console.log("Invalid Username or password");
+        setError("Invalid Username or password.");
+      });
+
+    console.log("Logging in with data:", userData); // Logging for debugging
+  };
+
+  return (
+    <div className="container-fluid d-flex flex-column min-vh-100 px-4 py-3">
+      {/* Header */}
+      <header className="text-center py-4 bg-white shadow-sm border-bottom">
+        <div className="container">
+          <img src="/images/CV_AUCTION_HQ_LOGO (1).png" className="img-fluid" alt="logo" width="30%" />
+        </div>
+      </header>
+
+      {/* Main Section */}
+      <div className="container mt-5">
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            {/* Dropdown Buttons */}
+            <div className="d-flex justify-content-center gap-3 mb-2">
+              <button
+                className={`btn ${activeSection === "live" ? "btn-danger" : "btn-outline-danger"} px-4 py-2 fw-bold`}
+                onClick={() => setActiveSection("live")}
+              >
+                Live Auction
+              </button>
+              <button
+                className={`btn ${activeSection === "upcoming" ? "btn-danger" : "btn-outline-danger"} px-4 py-2 fw-bold`}
+                onClick={() => setActiveSection("upcoming")}
+              >
+                Upcoming Auction
+              </button>
+            </div>
+
+            {/* Scroller Container */}
+            <div className="border rounded-3 p-4 bg-white shadow-sm overflow-auto" style={{ maxHeight: "360px" }}>
+              {activeSection === "live" ? (
+                <div>
+                  <h5 className="text-danger">Live Auction Content</h5>
+                  <p>Details of live auctions will appear here.</p>
+                  <ul className="list-group">
+                    {liveAuction.map((item) => (
+                      <li className="list-group-item">
+                        <a href="/vehicle-list/live-auction" className="text-decoration-none text-dark">{item.eventname}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div>
+                  <h5 className="text-danger">Upcoming Auction Content</h5>
+                  <p>Details of upcoming auctions will appear here.</p>
+                  <ul className="list-group">
+                  {upcomingAuction.map((item) => (
+                      <li className="list-group-item">
+                        <a href="/vehicle-list/live-auction" className="text-decoration-none text-dark">{item.eventname}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Login Section */}
+          <div className="col-md-4 mt-5">
+            <div className="border rounded-3 p-4 bg-white shadow-sm">
+              <h5 className="text-center mb-4">Login</h5>
+              {error && <div className="alert alert-danger">{error}</div>}
+              <form onSubmit={handleLogin}>
+                <div className="mb-3">
+                  <label htmlFor="userId" className="form-label">User ID</label>
+                  <input type="text" className="form-control" id="userId" value={email} onChange={(e) => setEmail(e.target.value)}  placeholder="Enter your user ID" />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label">Password</label>
+                  <input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" />
+                </div>
+                <button type="submit" className="btn btn-primary w-100 mb-3">Log In</button>
+                <button type="button" className="btn btn-success w-100">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact Us */}
+      <div className="container mt-5 text-center p-4 bg-white shadow-sm rounded-3">
+        <h5 className="text-danger">Contact Us 📞</h5>
+        <p><strong>Helpline Number:</strong> 7020700000</p>
+        <p><strong>Email:</strong> cvauction@gmail.com</p>
+      </div>
+
+      {/* Footer */}
+     
+      <footer className="bg-dark text-white text-center py-3 mt-auto w-100">
+        <p className="mb-0">
+          <strong>© 2024 cvauction.com. All rights reserved in favour of CV Auction Tech Ltd.</strong>
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+export default Frontpage;
