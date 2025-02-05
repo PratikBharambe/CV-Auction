@@ -1,0 +1,20 @@
+LC _ 49
+
+
+
+
+3,43
+
+SELECT DISTINCT author_id as id FROM Views WHERE author_id = viewer_id ORDER BY id;
+SELECT DISTINCT author_id as id FROM Views WHERE author_id = viewer_id ORDER BY id desc;(desending)
+
+Sets:
+1.HashSet = best for memory, very fast and don't maintain natural order same operations as list and all
+2.TreeSet = maintain natural order of inputs and elements but consumes more memory
+3.LinkedHashSet = Maintain the order in which the elements are added in set
+
+
+mysql -u root -p
+
+
+this is how to create set to array ->>>> Integer[] uniqueNums = numSet.toArray(new Integer[0]);
