@@ -1,0 +1,65 @@
+-- Insert dummy data into Admin table
+INSERT INTO Admin (aname, apwd, aemail) VALUES
+('Admin1', 'password1', 'admin1@example.com'),
+('Admin2', 'password2', 'admin2@example.com'),
+('Admin3', 'password3', 'admin3@example.com');
+
+-- Insert dummy data into Users table
+INSERT INTO Users (ufirstName, ulastName, uname, role, upwd, uemail, mob_no, pan_card, address, bank_acc_no, bankname, bank_branch, account_holder_name, ifsc_code) VALUES
+('John', 'Doe', 'johndoe', 'Customer', 'pass123', 'john@example.com', '9876543210', 'ABCDE1234F', '123 Street, NY', '123456789012', 'Bank A', 'NY Branch', 'John Doe', 'IFSC001'),
+('Jane', 'Smith', 'janesmith', 'Seller', 'pass456', 'jane@example.com', '9876543211', 'FGHIJ5678K', '456 Avenue, LA', '987654321098', 'Bank B', 'LA Branch', 'Jane Smith', 'IFSC002'),
+('Mike', 'Brown', 'mikebrown', 'Customer', 'pass789', 'mike@example.com', '9876543212', 'KLMNO9876P', '789 Blvd, SF', '123459876543', 'Bank C', 'SF Branch', 'Mike Brown', 'IFSC003');
+
+-- Insert dummy data into All_Vehicles_Details table
+INSERT INTO All_Vehicles_Details (reg_no, reg_year, manufac_name, model_name, fuel_type, insurance, km_driven, RTO_passing, year_of_manufacturing, parking_location, imgUrls, pdfReportUrl) VALUES
+('ABC123', 2020, 'Toyota', 'Camry', 'Petrol', 'Yes', 20000, 'NY', 2019, 'Garage A', 'img1.jpg', 'report1.pdf'),
+('XYZ789', 2019, 'Honda', 'Civic', 'Diesel', 'Yes', 30000, 'LA', 2018, 'Garage B', 'img2.jpg', 'report2.pdf'),
+('LMN456', 2021, 'Ford', 'Focus', 'CNG', 'No', 15000, 'SF', 2020, 'Garage C', 'img3.jpg', 'report3.pdf');
+
+-- Insert dummy data into Host_Auction table
+INSERT INTO Host_Auction (vehicleid, base_price, auction_start, auction_end, removeSchedule, startAuction) VALUES
+(1, 15000.00, '2025-02-10 10:00:00', '2025-02-11 10:00:00', 0, 1),
+(2, 18000.00, '2025-02-12 11:00:00', '2025-02-13 11:00:00', 0, 1),
+(3, 20000.00, '2025-02-14 12:00:00', '2025-02-15 12:00:00', 0, 1);
+
+-- Insert dummy data into Current_Auction table
+INSERT INTO Current_Auction (vehicleid, auctionid, base_price, highest_bid, auction_start, auction_end) VALUES
+(1, 1, 15000.00, 16000.00, '2025-02-10 10:00:00', '2025-02-11 10:00:00'),
+(2, 2, 18000.00, 19000.00, '2025-02-12 11:00:00', '2025-02-13 11:00:00'),
+(3, 3, 20000.00, 21000.00, '2025-02-14 12:00:00', '2025-02-15 12:00:00');
+
+-- Insert dummy data into Deposit_Payment table
+INSERT INTO Deposit_Payment (uid, transactionTime, amt, paymentId, orderId, planType) VALUES
+(1, GETDATE(), 500.00, 'TXN001', 'ORD001', 'BASIC'),
+(2, GETDATE(), 1000.00, 'TXN002', 'ORD002', 'PREMIUM'),
+(3, GETDATE(), 500.00, 'TXN003', 'ORD003', 'BASIC');
+
+-- Insert dummy data into Allowed_User table
+INSERT INTO Allowed_User (uid, payment_no, auction_access_left) VALUES
+(1, 1, 5),
+(2, 2, 10),
+(3, 3, 5);
+
+-- Insert dummy data into Auction_Status_Track table
+INSERT INTO Auction_Status_Track (allowed_user_uid, vehicleid, auctionid, user_bid_left, price_offered, highest_bidder, auction_end) VALUES
+(1, 1, 1, 3, 15500.00, 1, 0),
+(2, 2, 2, 2, 18500.00, 2, 0),
+(3, 3, 3, 4, 20500.00, 3, 0);
+
+-- Insert dummy data into WinnerTable
+INSERT INTO WinnerTable (allowed_user_uid, vehicleId, auctionId, winnerId, auctionEndDate) VALUES
+(1, 1, 1, 1, '2025-02-11 10:00:00'),
+(2, 2, 2, 2, '2025-02-13 11:00:00'),
+(3, 3, 3, 3, '2025-02-15 12:00:00');
+
+-- Insert dummy data into Payment_Transaction table
+INSERT INTO Payment_Transaction (uid, transaction_date, amt, utr_no) VALUES
+(1, '2025-02-11', 16000.00, 'UTR001'),
+(2, '2025-02-13', 19000.00, 'UTR002'),
+(3, '2025-02-15', 21000.00, 'UTR003');
+
+-- Insert dummy data into Approvals table
+INSERT INTO Approvals (allowed_user_uid, vehicleid, auctionid, vehicleName, bidAmt, winnerId, approval_status, approval_date) VALUES
+(1, 1, 1, 'Toyota Camry', 16000.00, 1, 'Approved', GETDATE()),
+(2, 2, 2, 'Honda Civic', 19000.00, 2, 'Approved', GETDATE()),
+(3, 3, 3, 'Ford Focus', 21000.00, 3, 'Pending', GETDATE());
