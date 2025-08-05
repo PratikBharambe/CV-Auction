@@ -13,7 +13,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 
 WORKDIR /app
 
-#ENV ASPNETCORE_URLS=http://+:80
+ENV ASPNETCORE_URLS=http://+:80
 
 COPY --from=build /app/out .
 
